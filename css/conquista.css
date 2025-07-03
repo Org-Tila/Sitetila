@@ -1,3 +1,5 @@
+conquistas css
+
 * {
     margin: 0;
     padding: 0;
@@ -441,6 +443,7 @@ header .nav_menu .escolha .perfil:hover {
   gap: 2rem;
   font-size: 0.9rem;
   color: #1d1d1f;
+  margin-top: 100px;
 }
 
 .footer-top {

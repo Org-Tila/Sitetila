@@ -308,6 +308,14 @@ body {
     font-weight: 700;
 }
 
+.game-cards-wrapper{
+    display: flex;
+    flex-direction: row; /* Coloca os cards em coluna */
+    align-items: center; /* Centraliza os cards */
+    gap: 20px; /* Espaçamento entre os cards */
+
+}
+
 .game-card {
     background-color: #FFF;
     border-radius: 15px;
@@ -317,6 +325,7 @@ body {
     max-width: 400px; /* Limita o tamanho do card */
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     position: relative;
+    margin-right: 90px;
 }
 
 .game-card img {
@@ -374,7 +383,7 @@ body {
 
 
 /* Footer */
-.footer {
+/* .footer {
     grid-area: footer;
     background-color: var(--footer-bg);
     padding: 20px 40px;
@@ -410,7 +419,64 @@ body {
 .footer-center p {
     margin-bottom: 10px;
     font-weight: 600;
+} */
+
+
+/* new footer */
+
+.footer {
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+font-size: 0.9rem;
+grid-area: footer;
+  color: #1d1d1f;
 }
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-left img {
+  width: 130px; /* ajuste se necessário */
+
+}
+
+.fb-icon {
+    width: 90px;
+    height: 90px;
+}
+
+footer-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-right p {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #0052f1;
+}
+
+
 
 .email-signup {
     display: flex;
@@ -514,37 +580,8 @@ body {
         width: 90%;
         max-width: none; /* Remove a largura máxima */
     }
-
-    .footer {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .footer-left,
-    .footer-center,
-    .footer-right {
-        margin-bottom: 20px;
-    }
-
-    .footer-left {
-        flex-direction: column;
-        margin-right: 0;
-    }
-
-    .footer-left img {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-
-    .email-signup {
-        width: 100%;
-    }
-
-    .footer-right a {
-        margin: 0 10px;
-    }
 }
+    
 
 @media (max-width: 576px) {
     .main-content {
