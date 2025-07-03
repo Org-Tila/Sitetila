@@ -26,14 +26,21 @@ header.navbar {
   margin: 1rem;
 }
 
+header .tl {
+    position: relative;
+    bottom: 10px;
+    align-items: center;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+}
+
 .nav-left {
   display: flex;
   align-items: center;
   gap: 1rem;
-}
-
-.nav-left img {
-  width: 60px;
 }
 
 .nav-left nav a {
@@ -230,6 +237,11 @@ footer{
     flex-grow: 1;
 }
 
+footer .logo_tila {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
 footer .rodape {
     display: flex;
     align-items: center;
@@ -257,11 +269,21 @@ footer .rodape .form_rodape input {
     font-weight: 900;
 }
 
-footer .rodape .form_rodape input a,img {
+footer .rodape .form_rodape input a {
     position: relative;
-    top: 20px;
-    right: 30px;
+    align-items: center;
+    justify-self: center;
     transition: 0.5s ease;
+}
+
+footer .rodape .form_rodape form .chamada {
+    display: flex;
+    align-items: center;
+}
+
+footer .rodape .form_rodape form .chamada a {
+    position: relative;
+    right: 50px;
 }
 
 /*--------------------------*/
