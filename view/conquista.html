@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/conquista.css">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <title>Conquistas</title>
+</head>
+<header>
+
+    <div class="nav_menu">
+        <div class="img-navbar">
+            <img src="../img/nav_bar.png" alt="imagem da nav bar" width="40" class="navbar">
+        </div>
+        <div class="escolha">
+            <a href="#" class="perfil">Meu perfil</a>
+            <a href="../view/home.html" class="inicio">Início</a>
+        </div>  
+    </div>
+
+</header>
+<body>
+<!--Container controla todo o conteúdo da tela-->
+    <div class="container"><!--Todas as div ficam dentro do container, tudo do menu lateral fica na div "responsavel" tudo sobre as conquistas e informações das crianças fica dentro da container mas fora da div "responsavel"--> 
+
+        <div class="responsavel"><!--esta parte é responsável pelo menu lateral onde está o perfil do responsável-->
+
+            <div class="cracha_resp"><!--Perfil do user onde tem a foto e nome-->
+                <img src="../img/usuario_teste_1.png" alt="Imagem do usuário responsável" width="150">
+                <p>Maria de Lourdes</p>
+            </div>
+        
+
+        <div class="drop"><!--Menu droptown onde fica armazenado edição de perfil do user-->
+            <nav class="nav">
+                <ul class="main-menu">
+                    <li class="dropdown">
+                        <a href="#"><img src="../img/avatar.png" alt="avater" width="90"> Meu perfil</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Perfil</a></li>
+                            <li><a href="#">Editar perfil</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        
+
+        <div class="opcoes-menu"><!--Aqui está o restante das opções do menu lateral-->
+            <a href="#" class="ab">Atividades da Alice</a>
+            <a href="#" class="ab">Tempo de uso</a>
+            <a href="#" class="opcao-selecionada ab">Recompensas e conquistas</a>
+            <a href="#">Converse com a equipe <br> 
+                pedagógica
+            </a>
+        </div>
+
+        <div class="config"><!--Droptown das configurações-->
+            <nav class="nav">
+                <ul class="main-menu">
+                    <li class="dropdown">
+                        <a href="#"><img src="../img/engrenagem.png" alt="avater" width="70"> Configurações</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Segurança e privacidade</a></li>
+                            <li><a href="#">Gerenciar perfil da <br>criança</a></li>
+                            <li><a href="#">Notificações</a></li>
+                            <li class="dropdown"><a href="#">Suporte e contato</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">FAQ e ajuda</a></li>
+                                    <li><a href="#">Relatar problema</a></li>
+                                    <li><a href="#">Enviar sugestões</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        </div><!--Fim da div "responsavel"-->
+
+        <div class="crianca"><!--Parte que fala do desempenho da criaça-->
+            <h2 class="title-pri">Recompensas e conquistas</h2>
+            <div class="circles"><!--Imagens dos circulos que ficam de trás das conquistas-->
+                <img src="../img/circle.png" alt="Circulos" width="110">
+                <img src="../img/circle.png" alt="Circulos" width="110">
+                <img src="../img/circle.png" alt="Circulos" width="110">
+            </div>
+            <div class="medalhas"><!--Imagens das conquistas-->
+                <img src="../img/jogos.png" alt="Circulos" width="90"    class="jogo">
+                <img src="../img/desafios.png" alt="Circulos" width="90" class="desafio">
+                <img src="../img/medalhas.png" alt="Circulos" width="80" class="medalha">
+            </div>
+            <div class="des-medalhas"><!--Aqui fica os nomes de cada conquista/medalha-->
+                <p class="jo">Jogos</p>
+                <p>Desafios</p>
+                <p class="me">Medalhas</p>
+            </div>
+            <div class="sub-title">
+                <h2 class="title">Destaques do Mês</h2>
+                <p>Maio / 2025</p>
+            </div>
+            <div class="destaques">
+                <img src="../img/Rectangle.png" alt="Imagens dos destaques" width="350">
+                <div class="subtitle-destaques">
+                    <p>Leitura</p>
+                    <p class="con">Matemática</p>
+                    <p class="con">Criatividade</p>
+                </div>
+            </div>
+            <div class="relatorio-semanal">
+                <h2 class="title">Relátorio semanal</h2>
+                <div class="cracha-crianca">
+                    <img src="../img/usuario_teste_2.png" alt="avatar" width="90">
+                    <p>Alice Nogueira</p>
+                </div>
+                <div class="relatorio">
+                    <p class="ti">Olá, mamãe da Alice!</p>
+                    <p class="re">Este semana, a Alice Nogueira teve um<br> desempenho incrível na plataforma TILA!<br> Ela se destacou especialmente<br> nas atividades de lógica e resolução de<br> desafios, mostrando muita concentração<br> e criatividade</p>
+                    <p class="sub-ti">Parabéns à nossa pequena exploradora!</p>
+                </div>
+            </div>
+            <button id="btn" class="botao">Ver mais</button>
+        </div>
+
+    </div><!--Fim da div "container"-->
+
+
+     <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-left">
+        <!-- Logo da TILA -->
+        <img src="../img/logo.png" alt="Logo TILA" />
+      </div>
+
+      <div class="footer-right">
+        <p>Fique por dentro das novidades</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Informe seu email" />
+          <button><span>&rarr;</span></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>copyright © 2025 Tila</p>
+      <div class="footer-icons">
+        <!-- Ícones das redes sociais -->
+        <img src="../img/instagram.png" alt="Instagram" />
+        <img src="../img/github.png" alt="GitHub" />
+        <img src="../img/facebook.png" alt="Facebook" />
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

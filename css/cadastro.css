@@ -1,0 +1,269 @@
+/* cadastro.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fredoka', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #0000A3, #00006B);
+  color: #1d1d1f;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 1rem 2rem;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-left img {
+  width: 50px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn-cadastro,
+.btn-login {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  background: white;
+  transition: 0.3s ease;
+  text-decoration: none;
+  color: #000;
+}
+
+.btn-cadastro.active {
+  background: #FFD500;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.cadastro-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.form-box {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.mascote {
+  width: 120px;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #dcdcdc;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.progresso {
+  width: 60%;
+  height: 100%;
+  background: #0052F1;
+  border-radius: 10px;
+}
+
+form {
+  text-align: left;
+}
+
+form label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 0.6rem;
+  border: none;
+  background: #f3f3f3;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+
+.data-nascimento {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.data-nascimento select {
+  flex: 1;
+  text-align: center;
+}
+
+.btn-enviar {
+  width: 100%;
+  background: #0052F1;
+  color: white;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.login-ou {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0 1rem;
+  gap: 0.5rem;
+  font-weight: bold;
+  color: #444;
+  justify-content: center;
+}
+
+.linha {
+  flex: 1;
+  height: 1px;
+  background: #ccc;
+}
+
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.social-login img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.login-link {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.login-link a {
+  color: #1d1d1f;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 0.9rem;
+  color: #1d1d1f;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-left img {
+  width: 130px; /* ajuste se necessário */
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #0052f1;
+}
+
+.footer-right p {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  background-color: #f3f3f3;
+  border-radius: 30px;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+.newsletter-form input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+}
+
+.newsletter-form button {
+  background: linear-gradient(135deg, #7c3aed, #9333ea);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-icons img {
+  width: 22px;
+  cursor: pointer;
+}

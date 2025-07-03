@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tilinho e os Segredos do Reino Perdido</title>
+    <link rel="stylesheet" href="/css/tilaHis.css" />
+  </head>
+  <body>
+    <header>
+      <img src="/img/cabeçatilinho.png" alt="logo" class="cabeca" />
+      <label class="switch">
+        <input type="checkbox" id="themeToggle" />
+        <span class="slider"></span>
+      </label>
+    </header>
+    <div class="botao-direita">
+      <a href="/view/leitura.html"
+        ><button onclick="btn-acessar" class="botao-redondo">
+          Página inicial
+        </button></a
+      >
+    </div>
+    <main>
+      <h1>Tilinho e os Segredos do Reino Perdido</h1>
+
+      <div id="capitulo-container"></div>
+
+      <div class="nav-arrows">
+        <button onclick="previousPage()">&lt;</button>
+        <button onclick="nextPage()">&gt;</button>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-left">
+          <img src="../img/logo.png" alt="Logo TILA" />
+        </div>
+
+        <div class="footer-right">
+          <p>Fique por dentro das novidades</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Informe seu email" />
+            <button><span>&rarr;</span></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>copyright © 2025 Tila</p>
+        <div class="footer-icons">
+          <!-- Ícones das redes sociais -->
+          <img src="../img/instagram.png" alt="Instagram" />
+          <img src="../img/github.png" alt="GitHub" />
+          <img src="../img/facebook.png" alt="Facebook" />
+        </div>
+      </div>
+    </footer>
+
+    <script src="/script/tilinhoH.js"></script>
+  </body>
+</html>

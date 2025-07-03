@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tilogiquinho</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="welcome-section">
+        <img
+          src="/img/tilogiquinho.png"
+          alt="Logo Tilogiquinho"
+          class="logo-image"
+        />
+        <h1>Bem-vindo ao Tilogiquinho!</h1>
+      </div>
+
+      <div id="name-section">
+        <h2>Qual é o seu nome?</h2>
+        <input type="text" id="player-name" placeholder="Digite seu nome" />
+        <button onclick="askAge()">Continuar</button>
+      </div>
+
+      <div id="age-section" style="display: none">
+        <h2 id="ask-age-text">Qual a sua idade?</h2>
+        <div id="age-selection">
+          <button onclick="startGame(6, 7)">6 a 7 anos</button>
+          <button onclick="startGame(8, 9)">8 a 9 anos</button>
+          <button onclick="startGame(10, 11)">10 a 11 anos</button>
+        </div>
+      </div>
+
+      <div id="game-area" style="display: none">
+        <div id="question-container"></div>
+        <button id="next-button" style="display: none">Próxima Pergunta</button>
+        <div id="feedback" class="feedback"></div>
+        <div id="game-progress">
+          <p>
+            Pergunta: <span id="current-question">0</span> de
+            <span id="total-questions">5</span>
+          </p>
+        </div>
+      </div>
+
+      <div id="end-screen" style="display: none">
+        <h2>Fim do Jogo!</h2>
+        <p id="final-score"></p>
+        <button onclick="restartGame()">Jogar Novamente</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

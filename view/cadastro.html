@@ -1,0 +1,95 @@
+<!-- cadastro.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../img/favicon.png" type="image/x-icon">
+  <title>TiLA | Cadastro</title>
+  <link rel="stylesheet" href="../css/cadastro.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-left">
+      <img src="../img/cabeçatilinho.png" alt="Logo TILA" />
+    </div>
+    <div class="nav-right">
+      <a href="cadastro.html" class="btn-cadastro active">Cadastro</a>
+      <a href="login.html" class="btn-login">Login</a>
+      <button class="menu-icon">☰</button>
+    </div>
+  </header>
+
+  <main class="cadastro-container">
+    <div class="form-box">
+      <img src="../img/tilinhocadastro.png" alt="Robô TILA acenando" class="mascote" />
+      <h1>Seja Bem-Vindo(a)</h1>
+      <p>Faça seu cadastro, para criar a conta de seu pequeno(a)</p>
+
+      <div class="progress-bar">
+        <div class="progresso"></div>
+      </div>
+
+      <form>
+        <label for="nome">Nome Completo</label>
+        <input type="text" id="nome" placeholder="Informe seu nome completo" />
+
+        <label for="documento">Documento RG/CPF</label>
+        <input type="text" id="documento" placeholder="Informe seu documento" />
+
+        <label>Data de nascimento</label>
+        <div class="data-nascimento">
+          <select><option>Mês</option></select>
+          <select><option>Dia</option></select>
+          <select><option>Ano</option></select>
+        </div>
+
+        <button type="submit" class="btn-enviar">Enviar</button>
+      </form>
+
+      <div class="login-ou">
+        <div class="linha"></div>
+        <span>ou</span>
+        <div class="linha"></div>
+      </div>
+
+      <div class="social-login">
+        <img src="../img/facebook.png" alt="Facebook" />
+        <img src="../img/google.png" alt="Google" />
+      </div>
+
+      <p class="login-link">Já tem uma conta? <a href="login.html">Faça seu <strong>login aqui</strong></a></p>
+    </div>
+  </main>
+
+ 
+    <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-left">
+        <!-- Logo da TILA -->
+        <img src="../img/logo.png" alt="Logo TILA" />
+      </div>
+
+      <div class="footer-right">
+        <p>Fique por dentro das novidades</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Informe seu email" />
+          <button><span>&rarr;</span></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>copyright © 2025 Tila</p>
+      <div class="footer-icons">
+        <!-- Ícones das redes sociais -->
+        <img src="../img/instagram.png" alt="Instagram" />
+        <img src="../img/github.png" alt="GitHub" />
+        <img src="../img/facebook.png" alt="Facebook" />
+      </div>
+    </div>
+ 
+  </footer>
+</body>
+</html>

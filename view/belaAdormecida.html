@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/favicon.png" type="image/x-icon" />
+    <title>A Bela Adormecida</title>
+    <link rel="stylesheet" href="/css/belaHis.css" />
+  </head>
+  <body>
+    <header>
+      <img src="/img/cabeçatilinho.png" alt="Logo Robô" class="cabeca" />
+      <label class="switch">
+        <input type="checkbox" id="themeToggle" />
+        <span class="slider"></span>
+      </label>
+    </header>
+
+    <div class="container">
+      <img
+        src="/img/adormecida.jpg"
+        class="story-image"
+        alt="A Bela Adormecida"
+      />
+      <h2>A Bela Adormecida</h2>
+      <div class="author">Charles Perrault</div>
+
+      <div class="pagination">
+        <button class="page-btn active" onclick="showPage(1)">01</button>
+        <button class="page-btn" onclick="showPage(2)">02</button>
+        <button class="page-btn" onclick="showPage(3)">03</button>
+      </div>
+
+      <div class="story-text" id="storyText"></div>
+
+      <div class="nav-arrows">
+        <button onclick="previousPage()">&lt;</button>
+        <button onclick="nextPage()">&gt;</button>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-left">
+          <!-- Logo da TILA -->
+          <img src="../img/logo.png" alt="Logo TILA" />
+        </div>
+
+        <div class="footer-right">
+          <p>Fique por dentro das novidades</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Informe seu email" />
+            <button><span>&rarr;</span></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>copyright © 2025 Tila</p>
+        <div class="footer-icons">
+          <!-- Ícones das redes sociais -->
+          <img src="../img/instagram.png" alt="Instagram" />
+          <img src="../img/github.png" alt="GitHub" />
+          <img src="../img/facebook.png" alt="Facebook" />
+        </div>
+      </div>
+    </footer>
+    <script src="/script/bela.js"></script>
+  </body>
+</html>

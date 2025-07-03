@@ -1,0 +1,516 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: #000;
+}
+
+body {
+    background-color: #F3EFEF;
+}
+
+/*--Barra de navegação--*/
+
+header .nav_menu {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    justify-content: space-between;
+    width: 80vw;
+    background-color: #FFF;
+    padding-left: 10px;
+    padding-right: 20px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 1px 1px #0000002e;
+}
+
+header .nav_menu .navbar {
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+header .nav_menu .navbar:hover {
+    transform: scale(1.2);
+}
+
+header .nav_menu .escolha {
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    font-family: "Josefin Sans", sans-serif;
+    cursor: pointer;
+}
+
+header .nav_menu .escolha .perfil {
+    background-color: #FFCC00;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    border-radius: 30px;
+    transition: 0.5s ease;
+}
+
+header .nav_menu .escolha .perfil:hover {
+    background-color: #0066FF;
+    color: #FFF;
+}
+
+/*--Menu lateral esquerdo com o perfil do responsável etc...--*/
+
+.container{ /*--Tag responsável por movimentar todo o conteúdo da página--*/
+    display: flex;
+    justify-content: space-around;
+    width: 90vw;
+    margin-top: 70px;
+}
+
+.container .responsavel .cracha_resp {
+    display: flex;
+    align-items: center;
+}
+
+.container .responsavel .cracha_resp p {
+    font-family: "Josefin Sans", sans-serif;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.drop .nav .main-menu .dropdown a {
+    display: flex;
+    align-items: center;
+}
+
+.drop {
+    position: relative;
+    right: 55px;
+}
+
+/*--Doptown do crachá do responsável--*/
+
+.drop .main-menu {
+    list-style: none; /* Remove os marcadores da lista */
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    margin-bottom: 80px;
+}
+
+.drop .main-menu > li {
+    display: inline-block; /* Faz os itens do menu principal ficarem lado a lado */
+    position: relative; /* Essencial para posicionar o submenu */
+}
+
+.drop .main-menu a {
+    display: block; /* Faz o link preencher o espaço do item da lista */
+    padding: 15px 20px;
+    color: #000;
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+.drop .dropdown-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 30px;
+    position: absolute; /* Posiciona o submenu em relação ao item pai */
+    top: 100%; /* Coloca o submenu abaixo do item pai */
+    left: 0;
+    min-width: 180px; /* Largura mínima do submenu */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1; /* Garante que o submenu fique acima de outros elementos */
+    margin-bottom: 50px;
+    display: none; /* ESCONDE O SUBMENU POR PADRÃO */
+}
+
+.drop .dropdown-menu li {
+    width: 100%; /* Faz os itens do submenu preencherem a largura do submenu */
+}
+
+.drop .dropdown-menu a {
+    padding: 12px 15px;
+    color:#000;
+}
+
+.drop .dropdown-menu a:hover {
+    background-color: #0066FF;
+    color: #FFF;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+/* Mostra o submenu quando o mouse passa sobre o item pai */
+.drop .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/*--Final dropdown--*/
+
+.opcoes-menu {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 18px;
+}
+
+.opcoes-menu .ab {
+    margin-bottom: 40px;
+}
+
+.opcoes-menu .opcao-selecionada {
+    background-color: #ffde5a94;
+    padding: 7px;
+    border-radius: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.opcoes-menu .opcao-selecionada:hover {
+    background-color: #ffde5a;
+}
+
+/**--Configurações e droptown confing--*/
+
+.config .main-menu {
+    list-style: none; /* Remove os marcadores da lista */
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    margin-bottom: 80px;
+}
+
+.config .main-menu > li {
+    display: inline-block; /* Faz os itens do menu principal ficarem lado a lado */
+    position: relative; /* Essencial para posicionar o submenu */
+}
+
+.config .main-menu a {
+    display: block; /* Faz o link preencher o espaço do item da lista */
+    padding: 15px 20px;
+    color: #000;
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+.config .dropdown-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 30px;
+    position: absolute; /* Posiciona o submenu em relação ao item pai */
+    top: 100%; /* Coloca o submenu abaixo do item pai */
+    left: 0;
+    min-width: 180px; /* Largura mínima do submenu */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1; /* Garante que o submenu fique acima de outros elementos */
+    margin-bottom: 50px;
+    display: none; /* ESCONDE O SUBMENU POR PADRÃO */
+}
+
+.config .dropdown-menu li {
+    width: 100%; /* Faz os itens do submenu preencherem a largura do submenu */
+}
+
+.config .dropdown-menu a {
+    padding: 12px 15px;
+    color:#000;
+}
+
+.config .dropdown-menu a:hover {
+    background-color: #0066FF;
+    color: #FFF;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+/* Mostra o submenu quando o mouse passa sobre o item pai */
+.config .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.config .main-menu .dropdown a {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/*--Fim do droptown config*/
+
+/*--Daqui em diante é a parte sobre o relátorio sobre a criança--*/
+
+.container .crianca {
+    background-color: #FFF;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px 1px #0000001b;
+}
+
+.container .crianca .title-pri {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    justify-self: center;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.container .crianca .circles {/*--Estilização dos círculos atras das medalhas--*/
+    justify-self: center;
+}
+
+.container .crianca .medalhas {/*--Início da estilização das medalhas*/
+    position: relative;
+    justify-self: center;
+    bottom: 100px;
+}
+
+.container .crianca .medalhas .jogo {
+    position: relative;
+    bottom: 19px;
+    right: 22px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.container .crianca .medalhas .jogo:hover {
+    transform: scale(1.2);
+}
+
+.container .crianca .medalhas .desafio {
+    position: relative;
+    bottom: 15px;
+    right: 5px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.container .crianca .medalhas .desafio:hover {
+    transform: scale(1.2);
+}
+
+.container .crianca .medalhas .medalha {
+    position: relative;
+    left: 20px;
+    bottom: 5px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.container .crianca .medalhas .medalha:hover {
+    transform: scale(1.2);
+}/*--Final da estilização das medalhas*/
+
+.container .crianca .des-medalhas {/*Títulos das medalhas*/
+    display: flex;
+    font-size: 19px;
+    font-family: "Josefin Sans", sans-serif;
+    gap: 10px;
+    position: relative;
+    bottom: 90px;
+    left: 80px;
+}
+
+.container .crianca .des-medalhas .jo {
+    position: relative;
+    right: 50px;
+}
+
+.container .crianca .des-medalhas .me {
+    position: relative;
+    right: 30px;
+    left: 50px;
+}/*--Fim do estilização dos títulos das medalhas*/
+
+.container .crianca .sub-title {
+    position: relative;
+    justify-self: center;
+    justify-content: center;
+    justify-items: center;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.container .crianca .sub-title h2 {
+    margin-bottom: 10px;
+}
+
+.container .crianca .subtitle-destaques {
+    display: flex;
+    justify-self: center;
+    gap: 45px;
+    font-size: 15px;
+    font-family: "Josefin Sans", sans-serif;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.container .crianca .subtitle-destaques .con {
+    position: relative;
+    left: 20px;
+}
+
+.container .crianca .relatorio-semanal {
+    background-color: #EC3AA5;
+    padding: 15px;
+    padding-bottom: 60px;
+    padding-top: 50px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 1px 1px #00000026;
+}
+
+.container .crianca .relatorio-semanal h2 {
+    font-family: "Josefin Sans", sans-serif;
+    justify-self: center;
+}
+
+.container .crianca .cracha-crianca {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin: 15px;
+}
+
+.container .crianca .cracha-crianca p{
+    font-size: 19px;
+    font-family: "Josefin Sans", sans-serif;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.container .crianca .relatorio-semanal .relatorio {
+    font-family: "Quicksand", sans-serif;
+}
+
+.container .crianca .relatorio-semanal .relatorio .ti {
+    justify-self: center;
+    margin-bottom: 5px;
+    font-weight: 900;
+}
+
+.container .crianca .relatorio-semanal .relatorio .sub-ti {
+    margin-top: 15px;
+    font-weight: 900;
+}
+
+.container .botao {
+    display: flex;
+    justify-self: center;
+    margin-top: 20px;
+    font-size: 29px;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 5px;
+    border-radius: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    box-shadow: 1px 1px 1px 1px #00000027;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.container .botao:hover {
+    transform: scaleX(1.2);
+}
+
+/*--Linha na horizontal*/
+
+.linha-horizontal {
+    width: 100%; /* Garante que a linha ocupe 100% da largura do contêiner pai (body neste caso) */
+    height: 1px; /* Define a espessura da linha */
+    background-color: #ccc; /* Cor da linha. Para a imagem, parece um cinza escuro sutil. */
+    /* Ou, alternativamente, usando borda: */
+    /* border-top: 1px solid #ccc; */
+    /* background-color: transparent; */ /* Se usar border-top, não precisa de background-color */
+
+    /* Para que ela vá de ponta a ponta sem espaços, o margin do body precisa ser 0 */
+    margin: 0; /* Garante que não há margem extra nesta div */
+    padding: 0; /* Garante que não há padding extra nesta div */
+
+    /* Se você quiser um efeito de "sombra" como na sua imagem, pode adicionar: */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Sombra sutil abaixo da linha */
+    margin-top: 50px;
+}
+
+/*--Rodapé--*/
+.footer {
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 0.9rem;
+  color: #1d1d1f;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-left img {
+  width: 130px; /* ajuste se necessário */
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-right p {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #0052f1;
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  background-color: #f3f3f3;
+  border-radius: 30px;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+.newsletter-form input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+}
+
+.newsletter-form button {
+  background: linear-gradient(135deg, #7c3aed, #9333ea);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-icons img {
+  width: 22px;
+  cursor: pointer;
+}
